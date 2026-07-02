@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<nav style="display:flex; align-items:flex-start; justify-content:space-around; padding:9px 6px 15px; background:linear-gradient(180deg, rgba(10,14,22,0.2), rgba(6,9,15,0.97)); border-top:1px solid rgba(120,160,220,0.12); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
+  <sc-for list="{{ items }}" as="it" hint-placeholder-count="5">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:5px; position:relative; padding-top:9px;">
+      <div style="position:absolute; top:0; width:24px; height:2px; border-radius:2px; background:{{ it.bar }}; box-shadow:{{ it.barGlow }};"></div>
+      <div style="width:22px; height:22px; display:flex; align-items:center; justify-content:center; color:{{ it.color }}; filter:drop-shadow(0 0 6px {{ it.glow }});">
+        <sc-if value="{{ it.isHome }}" hint-placeholder-val="{{ true }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="6.5" y="6.5" width="11" height="11" rx="2.5" transform="rotate(45 12 12)" stroke="currentColor" stroke-width="1.7"/></svg></sc-if>
+        <sc-if value="{{ it.isBills }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="3" rx="1.5" fill="currentColor"/><rect x="4" y="12" width="16" height="3" rx="1.5" fill="currentColor" opacity="0.6"/><rect x="4" y="18" width="10" height="2.4" rx="1.2" fill="currentColor" opacity="0.35"/></svg></sc-if>
+        <sc-if value="{{ it.isBudget }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/></svg></sc-if>
+        <sc-if value="{{ it.isHistory }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v4.2l2.8 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></sc-if>
+        <sc-if value="{{ it.isSettings }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="2.1" fill="currentColor"/><circle cx="12" cy="12" r="2.1" fill="currentColor"/><circle cx="18" cy="12" r="2.1" fill="currentColor"/></svg></sc-if>
+      </div>
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:9.5px; letter-spacing:1.4px; text-transform:uppercase; color:{{ it.color }};">{{ it.label }}</span>
+    </div>
+  </sc-for>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:72},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Home&quot;,&quot;Bills&quot;,&quot;Budget&quot;,&quot;History&quot;,&quot;Settings&quot;],&quot;default&quot;:&quot;Home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const active = this.props.active || 'Home';
+    const defs = ['Home', 'Bills', 'Budget', 'History', 'Settings'];
+    const items = defs.map(key => {
+      const on = key === active;
+      return {
+        label: key,
+        color: on ? '#2fe1f0' : '#57657f',
+        glow: on ? 'rgba(47,225,240,0.7)' : 'transparent',
+        bar: on ? '#2fe1f0' : 'transparent',
+        barGlow: on ? '0 0 10px #2fe1f0, 0 0 3px #2fe1f0' : 'none',
+        isHome: key === 'Home',
+        isBills: key === 'Bills',
+        isBudget: key === 'Budget',
+        isHistory: key === 'History',
+        isSettings: key === 'Settings',
+      };
+    });
+    return { items };
+  }
+}
+</script>
+</body>
+</html>

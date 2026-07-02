@@ -1,0 +1,143 @@
+/* Spendr — global shell. V2: dark, flat surfaces, strict glow budget.
+   Motion: fast 150ms (chips/ripples) · base 220ms (sheets/tabs/toasts)
+   · celebrate 600–1200ms spring, one-shot only. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: #070a12;
+  /* flat bg gradient + faint neutral grid + one soft blue radial (no magenta — retired) */
+  background-image:
+    radial-gradient(120% 70% at 30% -10%, rgba(43, 110, 219, 0.10), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(136, 160, 205, 0.028) 0 1px, transparent 1px 46px),
+    repeating-linear-gradient(90deg, rgba(136, 160, 205, 0.028) 0 1px, transparent 1px 46px),
+    linear-gradient(180deg, #070a12, #0a0f19);
+  background-attachment: fixed;
+  color: #eef3fe;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* readouts everywhere align like a terminal */
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbars inside the device frame while keeping scroll */
+.scroll-hide { scrollbar-width: none; -ms-overflow-style: none; }
+.scroll-hide::-webkit-scrollbar { width: 0; height: 0; }
+
+button { font-family: inherit; }
+
+/* Calm, tactile press feedback — no bounce, no pulse */
+button:active { transform: scale(0.985); }
+
+/* Keyboard navigation: cyan focus ring, only when tabbing (cyan = interactive) */
+:focus-visible {
+  outline: 2px solid rgba(47, 225, 240, 0.55);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- base motion ---- */
+
+@keyframes spendr-sheet-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+@keyframes spendr-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes spendr-caret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* top state pills (status voice) */
+@keyframes spendr-toast-in {
+  from { opacity: 0; transform: translateY(-16px) scale(0.9); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes spendr-toast-out {
+  to { opacity: 0; transform: translateY(-10px) scale(0.95); }
+}
+
+/* M2 bottom undo-toast: slides up with a light spring, leaves down */
+@keyframes spendr-toast-up {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes spendr-toast-down {
+  to { opacity: 0; transform: translateY(16px) scale(0.97); }
+}
+
+/* status text pop (e.g. UNPAID → PAID ✓) */
+@keyframes spendr-pop-in {
+  0%   { opacity: 0; transform: scale(0.4); }
+  60%  { transform: scale(1.12); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ---- celebration keyframes (one-shot ports of the reference sp-* set) ---- */
+
+/* M1 takeover card: spring pop 0.72 → 1 */
+@keyframes sp-pop {
+  0%   { opacity: 0; transform: scale(0.72); }
+  70%  { opacity: 1; transform: scale(1.04); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* M1 check ring draws (pair with inline stroke-dasharray) */
+@keyframes sp-ring  { to { stroke-dashoffset: 0; } }
+@keyframes sp-check { to { stroke-dashoffset: 0; } }
+
+/* M1 confetti rect: bursts outward along per-piece CSS vars, tumbles, fades */
+@keyframes sp-confetti {
+  0%   { opacity: 1; transform: translate(0, 0) rotate(0deg) scale(1); }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.6); }
+}
+
+/* M3 calm amber pulse — exactly 2 cycles, then static */
+@keyframes sp-pulse {
+  0%, 100% { box-shadow: 0 0 0 rgba(255, 180, 55, 0); }
+  50%      { box-shadow: 0 0 22px rgba(255, 180, 55, 0.22); }
+}
+
+/* M4 payday: skewed emerald light band crosses the hero */
+@keyframes sp-sweep {
+  from { transform: translateX(-140%) skewX(-18deg); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  to   { transform: translateX(240%) skewX(-18deg); opacity: 0; }
+}
+
+/* M4 payday: tiny emerald motes rise and fade */
+@keyframes sp-rise {
+  from { opacity: 0; transform: translateY(0) scale(1); }
+  20%  { opacity: 0.9; }
+  to   { opacity: 0; transform: translateY(-46px) scale(0.5); }
+}
+
+/* M2 quick-log tap ripple (fast, cyan) */
+@keyframes sp-ripple {
+  from { opacity: 0.45; transform: scale(0); }
+  to   { opacity: 0; transform: scale(2.4); }
+}
+
+/* FAB micro-interaction (hover bloom kept by user choice — subtle interactive glow) */
+.fab { transition: transform 180ms ease-out, box-shadow 180ms ease-out; }
+.fab:hover { box-shadow: 0 0 26px rgba(47, 225, 240, 0.45), 0 8px 20px rgba(0, 0, 0, 0.5) !important; }
+.fab:active { transform: scale(0.9) rotate(90deg); }
+
+/* Respect reduced-motion: celebrations are skipped in JS; kill everything else too */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

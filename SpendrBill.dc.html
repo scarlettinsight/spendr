@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="position:relative; display:flex; align-items:center; gap:12px; padding:13px 14px 13px 17px; border-radius:14px; background:{{ cardBg }}; border:{{ cardBorder }}; overflow:hidden;">
+  <div style="position:absolute; left:0; top:11px; bottom:11px; width:3px; border-radius:0 3px 3px 0; background:{{ accent }}; box-shadow:{{ leftGlow }};"></div>
+  <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:6px;">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <span style="width:7px; height:7px; border-radius:2px; background:{{ catColor }}; flex:0 0 auto; box-shadow:0 0 6px {{ catColor }};"></span>
+      <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13.5px; color:#e9eefb; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ name }}</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:7px;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:10.5px; letter-spacing:0.4px; color:{{ dueColor }};">{{ due }}</span>
+      <span style="color:#33405c; font-size:10px;">•</span>
+      <span style="font-size:10px; color:#7d8aa3; font-family:'Chakra Petch',sans-serif;">{{ source }}</span>
+    </div>
+    <div style="display:flex; gap:5px; flex-wrap:wrap; margin-top:1px;">
+      <sc-if value="{{ autopay }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 7px; border-radius:5px; color:#2fe1f0; background:rgba(47,225,240,0.1); border:1px solid rgba(47,225,240,0.24);">AUTOPAY</span></sc-if>
+      <sc-if value="{{ debtChip }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 7px; border-radius:5px; color:#ff4d68; background:rgba(255,77,104,0.12); border:1px solid rgba(255,77,104,0.32);">DEBT</span></sc-if>
+      <sc-if value="{{ bnpl }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 7px; border-radius:5px; color:#ff7a3d; background:rgba(255,122,61,0.13); border:1px solid rgba(255,122,61,0.34);">BNPL</span></sc-if>
+      <sc-if value="{{ sub }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 7px; border-radius:5px; color:#c07dff; background:rgba(192,125,255,0.12); border:1px solid rgba(192,125,255,0.3);">SUB</span></sc-if>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:flex-end; gap:7px; flex:0 0 auto;">
+    <span style="font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:16px; color:{{ amtColor }};">{{ amt }}</span>
+    <sc-if value="{{ paid }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 8px; border-radius:5px; color:#35e6a1; background:rgba(53,230,161,0.13); border:1px solid rgba(53,230,161,0.32);">PAID</span></sc-if>
+    <sc-if value="{{ unpaid }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Chakra Petch',sans-serif; font-size:8.5px; letter-spacing:1px; font-weight:600; padding:3px 8px; border-radius:5px; color:{{ dueTagColor }}; background:{{ dueTagBg }}; border:1px solid {{ dueTagBorder }};">{{ dueTag }}</span></sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:358,&quot;height&quot;:92},&quot;bill&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;object&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const b = this.props.bill || {};
+    const debt = !!b.debt;
+    const bnpl = !!b.bnpl;
+    const urgent = !!b.urgent;
+    return {
+      name: b.name, amt: b.amt, due: b.due, source: b.source, cat: b.cat,
+      catColor: b.catColor || '#2fe1f0',
+      autopay: !!b.autopay, sub: !!b.sub, bnpl,
+      debtChip: debt && !bnpl,
+      paid: !!b.paid,
+      unpaid: !b.paid,
+      accent: debt ? (bnpl ? '#ff7a3d' : '#ff4d68') : (urgent ? '#ffb236' : '#2fe1f0'),
+      cardBg: debt
+        ? 'linear-gradient(180deg, rgba(46,18,26,0.66), rgba(18,11,15,0.62))'
+        : 'linear-gradient(180deg, rgba(22,30,48,0.72), rgba(12,16,26,0.66))',
+      cardBorder: debt ? '1px solid rgba(255,77,104,0.3)' : '1px solid rgba(120,160,220,0.13)',
+      leftGlow: debt ? '0 0 14px rgba(255,77,104,0.5)' : (urgent ? '0 0 12px rgba(255,178,54,0.5)' : '0 0 10px rgba(47,225,240,0.4)'),
+      amtColor: debt ? '#ff6d84' : '#e9eefb',
+      dueColor: urgent ? '#ffb236' : '#8493ad',
+      dueTag: b.paid ? '' : (urgent ? 'DUE SOON' : 'UNPAID'),
+      dueTagColor: urgent ? '#ffb236' : '#7d8aa3',
+      dueTagBg: urgent ? 'rgba(255,178,54,0.12)' : 'rgba(125,138,163,0.1)',
+      dueTagBorder: urgent ? 'rgba(255,178,54,0.3)' : 'rgba(125,138,163,0.22)',
+    };
+  }
+}
+</script>
+</body>
+</html>

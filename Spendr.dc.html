@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body{margin:0; background:#04060c; background-image:radial-gradient(120% 80% at 18% -10%, rgba(43,110,219,0.12), transparent 55%), radial-gradient(100% 70% at 100% 8%, rgba(255,61,154,0.07), transparent 55%), repeating-linear-gradient(0deg, rgba(120,160,220,0.035) 0 1px, transparent 1px 46px), repeating-linear-gradient(90deg, rgba(120,160,220,0.035) 0 1px, transparent 1px 46px); background-attachment:fixed; font-family:'Space Grotesk',sans-serif; -webkit-font-smoothing:antialiased;}
+  *{box-sizing:border-box;}
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#06080f"/><text x="50" y="46" font-family="monospace" font-size="13" fill="#35e6a1" text-anchor="middle" font-weight="bold">SAFE</text><text x="50" y="64" font-family="monospace" font-size="12" fill="#2fe1f0" text-anchor="middle">$1,284</text></svg></template>
+</helmet>
+
+<div id="1a" style="position:relative; padding:56px 56px 90px; display:flex; flex-direction:column; gap:44px; min-width:1780px;">
+
+  <div style="position:absolute; top:20px; left:56px; font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; background:rgba(47,225,240,0.08); border:1px solid rgba(47,225,240,0.3); padding:4px 12px; border-radius:20px;">1a</div>
+
+  <!-- ===== BOARD HEADER ===== -->
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:24px; padding-top:22px;">
+    <div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:52px; letter-spacing:8px; line-height:1; background:linear-gradient(92deg, #2fe1f0, #8b7bff 55%, #ff3d9a); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(0 0 22px rgba(139,123,255,0.35));">SPENDR</div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:13px; letter-spacing:4px; color:#57657f; margin-top:12px;">FINANCIAL COMMAND CENTER &nbsp;/&nbsp; MIDNIGHT OPS</div>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <div style="display:flex; align-items:center; gap:8px; padding:8px 14px; border-radius:10px; background:rgba(53,230,161,0.07); border:1px solid rgba(53,230,161,0.25);"><span style="width:8px;height:8px;border-radius:50%;background:#35e6a1;box-shadow:0 0 8px #35e6a1;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2px;color:#7fe9c4;">STABLE</span></div>
+      <div style="display:flex; align-items:center; gap:8px; padding:8px 14px; border-radius:10px; background:rgba(255,178,54,0.07); border:1px solid rgba(255,178,54,0.25);"><span style="width:8px;height:8px;border-radius:50%;background:#ffb236;box-shadow:0 0 8px #ffb236;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2px;color:#ffcf85;">CAUTION</span></div>
+      <div style="display:flex; align-items:center; gap:8px; padding:8px 14px; border-radius:10px; background:rgba(255,77,104,0.07); border:1px solid rgba(255,77,104,0.25);"><span style="width:8px;height:8px;border-radius:50%;background:#ff4d68;box-shadow:0 0 8px #ff4d68;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2px;color:#ff8497;">CRITICAL</span></div>
+    </div>
+  </div>
+
+  <!-- ===== PHONE ROW ===== -->
+  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;">
+
+    <!-- ============ HOME ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">01 &nbsp; HOME</span>
+      <div data-screen-label="Home" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7), inset 0 0 60px rgba(30,70,140,0.06); overflow:hidden; position:relative;">
+        <div style="background:radial-gradient(120% 55% at 50% -8%, rgba(43,110,219,0.12), transparent 60%), linear-gradient(180deg,#080b13,#05070d); min-height:930px; display:flex; flex-direction:column;">
+
+          <!-- status bar -->
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 24px 2px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;">
+            <span>12:47</span>
+            <div style="display:flex; gap:7px; align-items:center;"><span style="font-size:9px;letter-spacing:1.5px;color:#57657f;">SPENDR OS</span><div style="width:22px;height:10px;border:1px solid #57657f;border-radius:2px;padding:1px;"><div style="width:72%;height:100%;background:#35e6a1;border-radius:1px;box-shadow:0 0 5px #35e6a1;"></div></div></div>
+          </div>
+
+          <!-- app header -->
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 18px 6px;">
+            <div><div style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:1px;color:#7d8aa3;">Good evening, Alex</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#e9eefb;">July Cycle</div></div>
+            <div style="display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:9px;background:rgba(53,230,161,0.08);border:1px solid rgba(53,230,161,0.28);"><span style="width:7px;height:7px;border-radius:50%;background:#35e6a1;box-shadow:0 0 7px #35e6a1;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1.5px;color:#7fe9c4;">STABLE</span></div>
+          </div>
+
+          <div style="flex:1; padding:8px 16px 96px; display:flex; flex-direction:column; gap:16px;">
+
+            <!-- HERO -->
+            <div style="position:relative; overflow:hidden; border-radius:22px; padding:19px 19px 20px; background:linear-gradient(165deg, rgba(20,30,48,0.85), rgba(8,11,20,0.92)); border:1px solid rgba(53,230,161,0.24); box-shadow:0 0 34px rgba(53,230,161,0.09), inset 0 1px 0 rgba(255,255,255,0.05);">
+              <div style="position:absolute; left:0; right:0; bottom:0; height:78px; background:linear-gradient(180deg, transparent, rgba(255,61,154,0.06) 55%, rgba(47,225,240,0.05)); pointer-events:none;"></div>
+              <div style="position:absolute; left:0; right:0; bottom:0; height:78px; background-image:repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 28px); -webkit-mask:linear-gradient(180deg,transparent,#000); mask:linear-gradient(180deg,transparent,#000); pointer-events:none;"></div>
+              <div style="position:relative; display:flex; justify-content:space-between; align-items:flex-start;">
+                <div style="min-width:0;">
+                  <div style="display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:#35e6a1;box-shadow:0 0 8px #35e6a1;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:3px;color:#7fe9c4;">SAFE TO SPEND</span></div>
+                  <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:47px;line-height:1.02;color:#eafff5;margin-top:9px;text-shadow:0 0 26px rgba(53,230,161,0.5);">$1,284<span style="font-size:26px;color:#7fe9c4;">.50</span></div>
+                  <div style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:#8493ad;margin-top:7px;letter-spacing:0.4px;">safe until <span style="color:#c7d2e6;">Jul 15</span> &middot; next paycheck</div>
+                </div>
+                <div style="flex:0 0 auto; width:82px;height:82px;border-radius:50%;background:conic-gradient(#35e6a1 0% 62%, rgba(255,255,255,0.06) 62% 100%); display:flex;align-items:center;justify-content:center;box-shadow:0 0 22px rgba(53,230,161,0.25);">
+                  <div style="width:62px;height:62px;border-radius:50%;background:#0a0e17;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;"><span style="font-family:'Chakra Petch',sans-serif;font-size:19px;color:#35e6a1;">62%</span><span style="font-size:7px;letter-spacing:1px;color:#7d8aa3;">COMMITTED</span></div>
+                </div>
+              </div>
+              <div style="position:relative; margin-top:17px; display:flex; gap:8px;">
+                <div style="flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(120,160,220,0.1);border-radius:11px;padding:9px 10px;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">EXP. CHECKING</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#c7d2e6;margin-top:3px;">$3,420</div></div>
+                <div style="flex:1;background:rgba(255,178,54,0.05);border:1px solid rgba(255,178,54,0.16);border-radius:11px;padding:9px 10px;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">SPOKEN FOR</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#ffb236;margin-top:3px;">&minus;$2,135</div></div>
+                <div style="flex:1;background:rgba(139,123,255,0.05);border:1px solid rgba(139,123,255,0.16);border-radius:11px;padding:9px 10px;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">BUFFER</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#a99bff;margin-top:3px;">$500</div></div>
+              </div>
+            </div>
+
+            <!-- UPCOMING -->
+            <div style="display:flex; flex-direction:column; gap:11px;">
+              <div style="display:flex; align-items:center; justify-content:space-between;"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2.5px;color:#57657f;">COMING UP</span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#2fe1f0;">SEE ALL &rsaquo;</span></div>
+              <sc-for list="{{ homeGroups }}" as="grp" hint-placeholder-count="2">
+                <div style="display:flex; flex-direction:column; gap:9px;">
+                  <div style="display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:2px;background:{{ grp.accent }};box-shadow:0 0 7px {{ grp.accent }};"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;letter-spacing:2px;color:{{ grp.accent }};">{{ grp.title }}</span><span style="flex:1;height:1px;background:linear-gradient(90deg, rgba(120,160,220,0.18), transparent);"></span></div>
+                  <sc-for list="{{ grp.items }}" as="b" hint-placeholder-count="2">
+                    <dc-import name="SpendrBill" bill="{{ b }}" hint-size="100%,92px"></dc-import>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+
+            <!-- DEBT PULSE -->
+            <div style="border-radius:16px; padding:16px; background:linear-gradient(160deg, rgba(46,18,26,0.5), rgba(12,14,22,0.72)); border:1px solid rgba(255,77,104,0.22);">
+              <div style="display:flex; justify-content:space-between; align-items:center;"><div style="display:flex;align-items:center;gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:#ff4d68;box-shadow:0 0 8px #ff4d68;"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2.5px;color:#ff8497;">DEBT PULSE</span></div><span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1.5px;color:#7d8aa3;">TACTICAL</span></div>
+              <div style="display:flex; align-items:flex-end; gap:6px; margin-top:12px;"><span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:30px;color:#ff8497;text-shadow:0 0 18px rgba(255,77,104,0.35);">$823</span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:#8493ad;margin-bottom:6px;">due this month</span></div>
+              <div style="height:7px; border-radius:4px; margin-top:12px; overflow:hidden; background:rgba(255,255,255,0.06); display:flex;"><div style="width:16%;height:100%;background:#35e6a1;box-shadow:0 0 8px #35e6a1;"></div><div style="width:84%;height:100%;background:linear-gradient(90deg,#ff7a3d,#ff4d68);"></div></div>
+              <div style="display:flex; gap:8px; margin-top:13px;">
+                <div style="flex:1;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">PAID</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#35e6a1;margin-top:2px;">$132</div></div>
+                <div style="flex:1;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">UPCOMING</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#ffb236;margin-top:2px;">$691</div></div>
+                <div style="flex:1;"><div style="font-size:8.5px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">BNPL / AFFIRM</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#ff7a3d;margin-top:2px;">$220</div></div>
+              </div>
+            </div>
+
+            <!-- INCOME -->
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2.5px;color:#57657f;">INCOME STATUS</span>
+              <sc-for list="{{ homeIncomes }}" as="inc" hint-placeholder-count="3">
+                <div style="display:flex; align-items:center; justify-content:space-between; padding:11px 13px; border-radius:12px; background:linear-gradient(180deg, rgba(22,30,48,0.6), rgba(12,16,26,0.6)); border:1px solid rgba(120,160,220,0.11);">
+                  <div style="display:flex; align-items:center; gap:10px;"><span style="width:8px;height:8px;border-radius:50%;background:{{ inc.color }};box-shadow:0 0 7px {{ inc.color }};"></span><div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#e9eefb;">{{ inc.name }}</div><div style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;color:#7d8aa3;letter-spacing:0.5px;margin-top:1px;">{{ inc.date }}</div></div></div>
+                  <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px;"><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:{{ inc.amtColor }};">{{ inc.amt }}</span><span style="font-family:'Chakra Petch',sans-serif;font-size:8px;letter-spacing:1px;padding:2px 7px;border-radius:5px;color:{{ inc.color }};background:{{ inc.chipBg }};border:1px solid {{ inc.chipBorder }};">{{ inc.status }}</span></div>
+                </div>
+              </sc-for>
+            </div>
+
+            <!-- BUDGET SNAPSHOT -->
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <div style="display:flex; align-items:center; justify-content:space-between;"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2.5px;color:#57657f;">BUDGET</span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#2fe1f0;">SEE ALL &rsaquo;</span></div>
+              <div style="display:flex; flex-wrap:wrap; gap:9px;">
+                <sc-for list="{{ homeCats }}" as="cat" hint-placeholder-count="4">
+                  <div style="flex:1 1 calc(50% - 5px); min-width:140px; background:linear-gradient(180deg, rgba(22,30,48,0.6), rgba(12,16,26,0.6)); border:1px solid rgba(120,160,220,0.11); border-radius:13px; padding:12px; display:flex; flex-direction:column; gap:9px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;color:#c7d2e6;">{{ cat.name }}</span><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:{{ cat.color }};">{{ cat.remaining }}</span></div>
+                    <div style="height:5px;border-radius:3px;background:rgba(255,255,255,0.06);overflow:hidden;"><div style="height:100%;width:{{ cat.bar }};background:{{ cat.color }};border-radius:3px;box-shadow:0 0 8px {{ cat.color }};"></div></div>
+                    <span style="font-size:9px;color:#57657f;font-family:'Chakra Petch',sans-serif;letter-spacing:0.4px;">{{ cat.spent }} of {{ cat.budget }} &middot; left</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- FAB -->
+          <div style="position:absolute; right:20px; bottom:92px; width:56px; height:56px; border-radius:50%; background:linear-gradient(145deg,#2fe1f0,#8b7bff); display:flex; align-items:center; justify-content:center; box-shadow:0 0 24px rgba(47,225,240,0.5), 0 8px 20px rgba(0,0,0,0.5); color:#04060c; font-size:30px; font-weight:300; font-family:'Space Grotesk',sans-serif;">+</div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0;"><dc-import name="SpendrNav" active="Home" hint-size="100%,72px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BILLS ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">02 &nbsp; BILLS</span>
+      <div data-screen-label="Bills" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7), inset 0 0 60px rgba(30,70,140,0.06); overflow:hidden; position:relative;">
+        <div style="background:radial-gradient(120% 55% at 50% -8%, rgba(139,123,255,0.1), transparent 60%), linear-gradient(180deg,#080b13,#05070d); min-height:930px; display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 24px 2px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;"><span>12:47</span><div style="display:flex; gap:7px; align-items:center;"><span style="font-size:9px;letter-spacing:1.5px;color:#57657f;">SPENDR OS</span><div style="width:22px;height:10px;border:1px solid #57657f;border-radius:2px;padding:1px;"><div style="width:72%;height:100%;background:#35e6a1;border-radius:1px;"></div></div></div></div>
+          <div style="padding:12px 18px 6px;"><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;letter-spacing:2px;color:#e9eefb;">BILLS</div><div style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:#7d8aa3;letter-spacing:0.5px;margin-top:2px;">10 active &middot; $2,536 remaining this cycle</div></div>
+          <div style="display:flex; gap:8px; padding:10px 18px 4px; overflow:hidden;">
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#04060c;background:#2fe1f0;box-shadow:0 0 12px rgba(47,225,240,0.4);">ALL</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">AUTOPAY</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#ff8497;background:rgba(255,77,104,0.08);border:1px solid rgba(255,77,104,0.24);">DEBT</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#c07dff;background:rgba(192,125,255,0.08);border:1px solid rgba(192,125,255,0.24);">SUBS</span>
+          </div>
+          <div style="flex:1; padding:10px 16px 96px; display:flex; flex-direction:column; gap:16px;">
+            <sc-for list="{{ billGroups }}" as="grp" hint-placeholder-count="4">
+              <div style="display:flex; flex-direction:column; gap:9px;">
+                <div style="display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:2px;background:{{ grp.accent }};box-shadow:0 0 7px {{ grp.accent }};"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;letter-spacing:2px;color:{{ grp.accent }};">{{ grp.title }}</span><span style="flex:1;height:1px;background:linear-gradient(90deg, rgba(120,160,220,0.18), transparent);"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;color:#57657f;">{{ grp.total }}</span></div>
+                <sc-for list="{{ grp.items }}" as="b" hint-placeholder-count="2">
+                  <dc-import name="SpendrBill" bill="{{ b }}" hint-size="100%,92px"></dc-import>
+                </sc-for>
+              </div>
+            </sc-for>
+          </div>
+          <div style="position:absolute; left:0; right:0; bottom:0;"><dc-import name="SpendrNav" active="Bills" hint-size="100%,72px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BUDGET ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">03 &nbsp; BUDGET</span>
+      <div data-screen-label="Budget" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7), inset 0 0 60px rgba(30,70,140,0.06); overflow:hidden; position:relative;">
+        <div style="background:radial-gradient(120% 55% at 50% -8%, rgba(47,225,240,0.1), transparent 60%), linear-gradient(180deg,#080b13,#05070d); min-height:930px; display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 24px 2px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;"><span>12:47</span><div style="display:flex; gap:7px; align-items:center;"><span style="font-size:9px;letter-spacing:1.5px;color:#57657f;">SPENDR OS</span><div style="width:22px;height:10px;border:1px solid #57657f;border-radius:2px;padding:1px;"><div style="width:72%;height:100%;background:#35e6a1;border-radius:1px;"></div></div></div></div>
+          <div style="padding:12px 18px 6px; display:flex; justify-content:space-between; align-items:flex-end;"><div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;letter-spacing:2px;color:#e9eefb;">BUDGET</div><div style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:#7d8aa3;letter-spacing:0.5px;margin-top:2px;">July &middot; day 1 of 31</div></div></div>
+          <div style="flex:1; padding:10px 16px 96px; display:flex; flex-direction:column; gap:14px;">
+            <!-- summary -->
+            <div style="display:flex; align-items:center; gap:16px; border-radius:16px; padding:18px; background:linear-gradient(160deg, rgba(20,30,48,0.8), rgba(8,11,20,0.9)); border:1px solid rgba(47,225,240,0.2);">
+              <div style="flex:0 0 auto; width:96px;height:96px;border-radius:50%;background:conic-gradient(#2fe1f0 0% 71%, rgba(255,255,255,0.06) 71% 100%); display:flex;align-items:center;justify-content:center;box-shadow:0 0 22px rgba(47,225,240,0.22);"><div style="width:72px;height:72px;border-radius:50%;background:#0a0e17;display:flex;flex-direction:column;align-items:center;justify-content:center;"><span style="font-family:'Chakra Petch',sans-serif;font-size:22px;color:#2fe1f0;">71%</span><span style="font-size:7px;letter-spacing:1px;color:#7d8aa3;">ALLOCATED</span></div></div>
+              <div style="flex:1; display:flex; flex-direction:column; gap:11px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#57657f;">BUDGET</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#c7d2e6;">$2,490</span></div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#57657f;">SPENT</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#ffb236;">$1,769</span></div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#57657f;">REMAINING</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:15px;color:#35e6a1;">$721</span></div>
+              </div>
+            </div>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2.5px;color:#57657f;">CATEGORIES</span>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="7">
+                <div style="border-radius:14px; padding:14px; background:linear-gradient(180deg, rgba(22,30,48,0.62), rgba(12,16,26,0.62)); border:1px solid rgba(120,160,220,0.12);">
+                  <div style="display:flex; justify-content:space-between; align-items:center;"><div style="display:flex;align-items:center;gap:9px;"><span style="width:9px;height:9px;border-radius:3px;background:{{ cat.color }};box-shadow:0 0 8px {{ cat.color }};"></span><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#e9eefb;">{{ cat.name }}</span></div><span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;padding:3px 8px;border-radius:5px;color:{{ cat.color }};background:{{ cat.statusBg }};border:1px solid {{ cat.statusBorder }};">{{ cat.status }}</span></div>
+                  <div style="height:6px;border-radius:4px;margin-top:12px;background:rgba(255,255,255,0.06);overflow:hidden;"><div style="height:100%;width:{{ cat.bar }};background:linear-gradient(90deg,{{ cat.color }},{{ cat.color }});border-radius:4px;box-shadow:0 0 8px {{ cat.color }};"></div></div>
+                  <div style="display:flex; gap:6px; margin-top:12px;">
+                    <div style="flex:1;"><div style="font-size:8px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">BUDGET</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;color:#c7d2e6;margin-top:2px;">{{ cat.budget }}</div></div>
+                    <div style="flex:1;"><div style="font-size:8px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">PLANNED</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;color:#a99bff;margin-top:2px;">{{ cat.planned }}</div></div>
+                    <div style="flex:1;"><div style="font-size:8px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">SPENT</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;color:#ffb236;margin-top:2px;">{{ cat.spent }}</div></div>
+                    <div style="flex:1;"><div style="font-size:8px;letter-spacing:1px;color:#57657f;font-family:'Chakra Petch',sans-serif;">LEFT</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:13px;color:{{ cat.color }};margin-top:2px;">{{ cat.remaining }}</div></div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="position:absolute; left:0; right:0; bottom:0;"><dc-import name="SpendrNav" active="Budget" hint-size="100%,72px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ HISTORY ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">04 &nbsp; HISTORY</span>
+      <div data-screen-label="History" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7), inset 0 0 60px rgba(30,70,140,0.06); overflow:hidden; position:relative;">
+        <div style="background:radial-gradient(120% 55% at 50% -8%, rgba(255,61,154,0.08), transparent 60%), linear-gradient(180deg,#080b13,#05070d); min-height:930px; display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 24px 2px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;"><span>12:47</span><div style="display:flex; gap:7px; align-items:center;"><span style="font-size:9px;letter-spacing:1.5px;color:#57657f;">SPENDR OS</span><div style="width:22px;height:10px;border:1px solid #57657f;border-radius:2px;padding:1px;"><div style="width:72%;height:100%;background:#35e6a1;border-radius:1px;"></div></div></div></div>
+          <div style="padding:12px 18px 6px;"><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;letter-spacing:2px;color:#e9eefb;">HISTORY</div><div style="font-family:'Chakra Petch',sans-serif;font-size:11px;color:#7d8aa3;letter-spacing:0.5px;margin-top:2px;">last 7 days &middot; net &minus;$113</div></div>
+          <div style="display:flex; gap:8px; padding:10px 18px 4px;">
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#04060c;background:#2fe1f0;">ALL</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">SPENT</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">INCOME</span>
+            <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;padding:6px 12px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">CHECKING</span>
+          </div>
+          <div style="flex:1; padding:10px 16px 96px; display:flex; flex-direction:column; gap:7px;">
+            <sc-for list="{{ transactions }}" as="t" hint-placeholder-count="8">
+              <div style="display:flex; align-items:center; gap:12px; padding:12px 13px; border-radius:12px; background:linear-gradient(180deg, rgba(20,27,42,0.5), rgba(11,15,24,0.5)); border:1px solid rgba(120,160,220,0.1);">
+                <div style="flex:0 0 auto; width:38px; text-align:center;"><div style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:0.5px;color:#57657f;">{{ t.mon }}</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:16px;color:#c7d2e6;line-height:1;">{{ t.day }}</div></div>
+                <div style="width:1px; align-self:stretch; background:rgba(120,160,220,0.12);"></div>
+                <div style="flex:1; min-width:0;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#e9eefb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ t.name }}</div><div style="display:flex; align-items:center; gap:7px; margin-top:3px;"><span style="width:6px;height:6px;border-radius:2px;background:{{ t.catColor }};"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;color:#7d8aa3;">{{ t.cat }}</span><span style="color:#33405c;font-size:9px;">&middot;</span><span style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;color:#7d8aa3;">{{ t.source }}</span></div></div>
+                <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px;"><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:{{ t.amtColor }};">{{ t.amt }}</span><span style="font-family:'Chakra Petch',sans-serif;font-size:8.5px;letter-spacing:0.5px;color:{{ t.impactColor }};">{{ t.impact }}</span></div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="position:absolute; left:0; right:0; bottom:0;"><dc-import name="SpendrNav" active="History" hint-size="100%,72px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SETTINGS ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">05 &nbsp; SETTINGS</span>
+      <div data-screen-label="Settings" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7), inset 0 0 60px rgba(30,70,140,0.06); overflow:hidden; position:relative;">
+        <div style="background:radial-gradient(120% 55% at 50% -8%, rgba(43,110,219,0.1), transparent 60%), linear-gradient(180deg,#080b13,#05070d); min-height:930px; display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 24px 2px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;"><span>12:47</span><div style="display:flex; gap:7px; align-items:center;"><span style="font-size:9px;letter-spacing:1.5px;color:#57657f;">SPENDR OS</span><div style="width:22px;height:10px;border:1px solid #57657f;border-radius:2px;padding:1px;"><div style="width:72%;height:100%;background:#35e6a1;border-radius:1px;"></div></div></div></div>
+          <div style="padding:12px 18px 6px;"><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;letter-spacing:2px;color:#e9eefb;">SETTINGS</div></div>
+          <div style="flex:1; padding:10px 16px 96px; display:flex; flex-direction:column; gap:18px;">
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:2.5px;color:#2fe1f0;">MONEY ENGINE</span>
+              <div style="border-radius:14px; overflow:hidden; border:1px solid rgba(120,160,220,0.12); background:linear-gradient(180deg, rgba(22,30,48,0.55), rgba(12,16,26,0.55));">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px 14px; border-bottom:1px solid rgba(120,160,220,0.08);"><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Starting checking balance</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#35e6a1;">$3,540.00</span></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px 14px;"><div><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Required buffer</span><div style="font-family:'Chakra Petch',sans-serif;font-size:9.5px;color:#7d8aa3;margin-top:2px;">Protected &middot; never counted as safe</div></div><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#a99bff;">$500.00</span></div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:2.5px;color:#2fe1f0;">PAYMENT SOURCES</span>
+              <div style="border-radius:14px; overflow:hidden; border:1px solid rgba(120,160,220,0.12); background:linear-gradient(180deg, rgba(22,30,48,0.55), rgba(12,16,26,0.55));">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:13px 14px; border-bottom:1px solid rgba(120,160,220,0.08);"><div style="display:flex;align-items:center;gap:10px;"><span style="width:8px;height:8px;border-radius:50%;background:#35e6a1;box-shadow:0 0 6px #35e6a1;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#e9eefb;">Checking &middot;&middot;1247</span></div><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#7fe9c4;">PRIMARY</span></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:13px 14px;"><div style="display:flex;align-items:center;gap:10px;"><span style="width:8px;height:8px;border-radius:50%;background:#c07dff;box-shadow:0 0 6px #c07dff;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#e9eefb;">Amex &middot;&middot;8</span></div><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1px;color:#c07dff;">CREDIT</span></div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:2.5px;color:#2fe1f0;">CONFIGURE</span>
+              <div style="border-radius:14px; overflow:hidden; border:1px solid rgba(120,160,220,0.12); background:linear-gradient(180deg, rgba(22,30,48,0.55), rgba(12,16,26,0.55));">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; border-bottom:1px solid rgba(120,160,220,0.08);"><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Budget categories</span><span style="font-family:'Chakra Petch',sans-serif;font-size:12px;color:#57657f;">7 &rsaquo;</span></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px;"><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Planned income</span><span style="font-family:'Chakra Petch',sans-serif;font-size:12px;color:#57657f;">3 &rsaquo;</span></div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:2.5px;color:#ff8497;">DATA</span>
+              <div style="display:flex; gap:10px;">
+                <div style="flex:1; text-align:center; padding:13px; border-radius:12px; border:1px solid rgba(47,225,240,0.24); background:rgba(47,225,240,0.06); font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:1px; color:#2fe1f0;">EXPORT CSV</div>
+                <div style="flex:1; text-align:center; padding:13px; border-radius:12px; border:1px solid rgba(255,77,104,0.28); background:rgba(255,77,104,0.06); font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:1px; color:#ff8497;">RESET APP</div>
+              </div>
+            </div>
+          </div>
+          <div style="position:absolute; left:0; right:0; bottom:0;"><dc-import name="SpendrNav" active="Settings" hint-size="100%,72px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== QUICK-ADD SHEETS ===== -->
+  <div style="font-family:'Chakra Petch',sans-serif; font-size:14px; letter-spacing:5px; color:#57657f; margin-top:14px;">QUICK-ADD FLOWS &nbsp;/&nbsp; BOTTOM SHEETS</div>
+  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;">
+
+    <!-- ADD EXPENSE -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">ADD EXPENSE</span>
+      <div data-screen-label="Add Expense" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7); overflow:hidden; position:relative;">
+        <div style="min-height:930px; background:linear-gradient(180deg,#0a0e17,#05070d); position:relative;">
+          <!-- dimmed backdrop -->
+          <div style="position:absolute; inset:0; background:rgba(4,6,12,0.72); backdrop-filter:blur(3px);"></div>
+          <div style="position:absolute; top:22px; left:24px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;">12:47</div>
+          <!-- sheet -->
+          <div style="position:absolute; left:0; right:0; bottom:0; border-radius:28px 28px 0 0; padding:12px 20px 26px; background:linear-gradient(180deg, rgba(16,22,36,0.98), rgba(8,11,20,0.99)); border:1px solid rgba(47,225,240,0.2); border-bottom:none; box-shadow:0 -20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(47,225,240,0.06);">
+            <div style="width:42px; height:4px; border-radius:3px; background:#33405c; margin:2px auto 16px;"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;"><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:17px;letter-spacing:1px;color:#e9eefb;">Add Expense</span><span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(120,160,220,0.14);display:flex;align-items:center;justify-content:center;color:#8493ad;font-size:15px;">&times;</span></div>
+            <!-- amount -->
+            <div style="text-align:center; padding:14px 0 18px;"><div style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:2px;color:#57657f;">AMOUNT</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:52px;color:#eafff5;text-shadow:0 0 24px rgba(47,225,240,0.35);margin-top:6px;">$48<span style="color:#7d8aa3;">.00</span><span style="border-left:2px solid #2fe1f0;margin-left:3px;animation:none;"></span></div></div>
+            <!-- type segment -->
+            <div style="display:flex; gap:6px; background:rgba(255,255,255,0.04); border-radius:12px; padding:4px; margin-bottom:16px;"><div style="flex:1;text-align:center;padding:9px;border-radius:9px;background:linear-gradient(145deg,#2fe1f0,#8b7bff);color:#04060c;font-family:'Chakra Petch',sans-serif;font-size:12px;letter-spacing:1px;font-weight:600;">EXPENSE</div><div style="flex:1;text-align:center;padding:9px;color:#8493ad;font-family:'Chakra Petch',sans-serif;font-size:12px;letter-spacing:1px;">INCOME</div><div style="flex:1;text-align:center;padding:9px;color:#8493ad;font-family:'Chakra Petch',sans-serif;font-size:12px;letter-spacing:1px;">BILL</div></div>
+            <!-- category chips -->
+            <div style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1.5px;color:#57657f;margin-bottom:8px;">CATEGORY</div>
+            <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;">
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;padding:7px 13px;border-radius:9px;color:#04060c;background:#35e6a1;box-shadow:0 0 12px rgba(53,230,161,0.4);">Food</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;padding:7px 13px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">Gas</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;padding:7px 13px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">Pets</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;padding:7px 13px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">Subscriptions</span>
+              <span style="font-family:'Chakra Petch',sans-serif;font-size:11px;padding:7px 13px;border-radius:9px;color:#8493ad;background:rgba(255,255,255,0.04);border:1px solid rgba(120,160,220,0.14);">Other</span>
+            </div>
+            <!-- source -->
+            <div style="display:flex; gap:10px; margin-bottom:16px;">
+              <div style="flex:1; display:flex; align-items:center; gap:8px; padding:12px; border-radius:11px; background:rgba(53,230,161,0.06); border:1px solid rgba(53,230,161,0.24);"><span style="width:7px;height:7px;border-radius:50%;background:#35e6a1;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:12px;color:#e9eefb;">Checking &middot;&middot;1247</span></div>
+              <div style="flex:0 0 auto; display:flex; align-items:center; gap:8px; padding:12px; border-radius:11px; background:rgba(255,255,255,0.03); border:1px solid rgba(120,160,220,0.12);"><span style="width:7px;height:7px;border-radius:50%;background:#c07dff;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:12px;color:#8493ad;">Amex</span></div>
+            </div>
+            <!-- impact preview -->
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-radius:11px; background:rgba(255,178,54,0.06); border:1px solid rgba(255,178,54,0.2); margin-bottom:16px;"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:1px;color:#ffcf85;">SAFE TO SPEND AFTER</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#ffb236;">$1,236.50</span></div>
+            <div style="text-align:center; padding:15px; border-radius:13px; background:linear-gradient(145deg,#2fe1f0,#8b7bff); color:#04060c; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:14px; letter-spacing:2px; box-shadow:0 0 26px rgba(47,225,240,0.4);">SAVE EXPENSE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARK PAID -->
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <span style="font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:4px; color:#57657f;">MARK BILL PAID</span>
+      <div data-screen-label="Mark Paid" style="width:390px; flex:0 0 auto; border-radius:46px; background:#080b13; border:1px solid rgba(120,160,220,0.14); box-shadow:0 0 0 9px #0b0e16, 0 40px 90px rgba(0,0,0,0.7); overflow:hidden; position:relative;">
+        <div style="min-height:930px; background:linear-gradient(180deg,#0a0e17,#05070d); position:relative;">
+          <div style="position:absolute; inset:0; background:rgba(4,6,12,0.72); backdrop-filter:blur(3px);"></div>
+          <div style="position:absolute; top:22px; left:24px; font-family:'Chakra Petch',sans-serif; font-size:12px; color:#c7d2e6;">12:47</div>
+          <div style="position:absolute; left:0; right:0; bottom:0; border-radius:28px 28px 0 0; padding:12px 20px 26px; background:linear-gradient(180deg, rgba(16,22,36,0.98), rgba(8,11,20,0.99)); border:1px solid rgba(53,230,161,0.2); border-bottom:none; box-shadow:0 -20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(53,230,161,0.06);">
+            <div style="width:42px; height:4px; border-radius:3px; background:#33405c; margin:2px auto 16px;"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;"><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:17px;letter-spacing:1px;color:#e9eefb;">Mark Paid</span><span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(120,160,220,0.14);display:flex;align-items:center;justify-content:center;color:#8493ad;font-size:15px;">&times;</span></div>
+            <!-- bill summary -->
+            <div style="position:relative; overflow:hidden; display:flex; justify-content:space-between; align-items:center; padding:16px 16px 16px 18px; border-radius:14px; background:linear-gradient(180deg, rgba(46,18,26,0.6), rgba(18,11,15,0.6)); border:1px solid rgba(255,77,104,0.28); margin-bottom:20px;"><div style="position:absolute;left:0;top:12px;bottom:12px;width:3px;background:#ff4d68;box-shadow:0 0 14px rgba(255,77,104,0.5);"></div><div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#e9eefb;">Car Payment &mdash; Toyota</div><div style="display:flex;gap:5px;margin-top:7px;"><span style="font-family:'Chakra Petch',sans-serif;font-size:8.5px;letter-spacing:1px;padding:3px 7px;border-radius:5px;color:#ff4d68;background:rgba(255,77,104,0.12);border:1px solid rgba(255,77,104,0.32);">DEBT</span><span style="font-family:'Chakra Petch',sans-serif;font-size:8.5px;letter-spacing:1px;padding:3px 7px;border-radius:5px;color:#2fe1f0;background:rgba(47,225,240,0.1);border:1px solid rgba(47,225,240,0.24);">AUTOPAY</span></div></div><span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;color:#ff6d84;">$389</span></div>
+            <!-- fields -->
+            <div style="display:flex; flex-direction:column; gap:11px; margin-bottom:18px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; border-radius:11px; background:rgba(255,255,255,0.03); border:1px solid rgba(120,160,220,0.12);"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:1px;color:#7d8aa3;">PAID FROM</span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#e9eefb;">Checking &middot;&middot;1247 &rsaquo;</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; border-radius:11px; background:rgba(255,255,255,0.03); border:1px solid rgba(120,160,220,0.12);"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:1px;color:#7d8aa3;">DATE PAID</span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#e9eefb;">Jul 4, 2026 &rsaquo;</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; border-radius:11px; background:rgba(255,255,255,0.03); border:1px solid rgba(120,160,220,0.12);"><span style="font-family:'Chakra Petch',sans-serif;font-size:11px;letter-spacing:1px;color:#7d8aa3;">AMOUNT</span><span style="font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:14px;color:#e9eefb;">$389.00</span></div>
+            </div>
+            <!-- toggle -->
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:13px 14px; border-radius:11px; background:rgba(53,230,161,0.05); border:1px solid rgba(53,230,161,0.2); margin-bottom:18px;"><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Deduct from checking now</span><div style="width:42px;height:24px;border-radius:14px;background:linear-gradient(90deg,#35e6a1,#2fe1f0);padding:2px;display:flex;justify-content:flex-end;box-shadow:0 0 12px rgba(53,230,161,0.4);"><div style="width:20px;height:20px;border-radius:50%;background:#04060c;"></div></div></div>
+            <div style="text-align:center; padding:15px; border-radius:13px; background:linear-gradient(145deg,#35e6a1,#2fe1f0); color:#04060c; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:14px; letter-spacing:2px; box-shadow:0 0 26px rgba(53,230,161,0.4);">CONFIRM PAID</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== HERO STATES ===== -->
+  <div style="font-family:'Chakra Petch',sans-serif; font-size:14px; letter-spacing:5px; color:#57657f; margin-top:14px;">SAFE-TO-SPEND STATES</div>
+  <div style="display:flex; flex-wrap:wrap; gap:24px;">
+    <sc-for list="{{ heroStates }}" as="s" hint-placeholder-count="3">
+      <div style="width:340px; position:relative; overflow:hidden; border-radius:20px; padding:20px; background:linear-gradient(165deg, rgba(20,30,48,0.8), rgba(8,11,20,0.92)); border:1px solid {{ s.border }}; box-shadow:0 0 30px {{ s.glow }};">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+          <div><div style="display:flex;align-items:center;gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:{{ s.color }};box-shadow:0 0 8px {{ s.color }};"></span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:2.5px;color:{{ s.color }};">SAFE TO SPEND</span></div>
+          <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:40px;color:#eafff5;margin-top:8px;text-shadow:0 0 22px {{ s.glow }};">{{ s.amount }}</div>
+          <div style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#8493ad;margin-top:6px;">{{ s.sub }}</div></div>
+          <div style="display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:9px;background:{{ s.chipBg }};border:1px solid {{ s.border }};"><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;letter-spacing:1.5px;color:{{ s.color }};">{{ s.label }}</span></div>
+        </div>
+        <div style="height:6px; border-radius:4px; margin-top:16px; background:rgba(255,255,255,0.06); overflow:hidden;"><div style="height:100%; width:{{ s.bar }}; background:{{ s.color }}; box-shadow:0 0 10px {{ s.color }}; border-radius:4px;"></div></div>
+        <div style="font-family:'Chakra Petch',sans-serif; font-size:9.5px; letter-spacing:0.5px; color:#7d8aa3; margin-top:9px;">{{ s.committed }} committed this month</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <!-- ===== COMPONENT LIBRARY + COLOR/TYPE ===== -->
+  <div style="font-family:'Chakra Petch',sans-serif; font-size:14px; letter-spacing:5px; color:#57657f; margin-top:14px;">DESIGN SYSTEM</div>
+  <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start;">
+
+    <!-- CHIPS + STATUS -->
+    <div style="width:360px; border-radius:18px; padding:22px; background:linear-gradient(180deg, rgba(16,22,36,0.6), rgba(8,11,20,0.7)); border:1px solid rgba(120,160,220,0.12);">
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; margin-bottom:16px;">CHIPS &amp; STATUS</div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#2fe1f0;background:rgba(47,225,240,0.1);border:1px solid rgba(47,225,240,0.28);">AUTOPAY</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#ff4d68;background:rgba(255,77,104,0.12);border:1px solid rgba(255,77,104,0.34);">DEBT</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#ff7a3d;background:rgba(255,122,61,0.13);border:1px solid rgba(255,122,61,0.36);">BNPL</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#c07dff;background:rgba(192,125,255,0.12);border:1px solid rgba(192,125,255,0.32);">SUB</span>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#35e6a1;background:rgba(53,230,161,0.13);border:1px solid rgba(53,230,161,0.34);">PAID</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#ffb236;background:rgba(255,178,54,0.12);border:1px solid rgba(255,178,54,0.3);">DUE SOON</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#7d8aa3;background:rgba(125,138,163,0.1);border:1px solid rgba(125,138,163,0.24);">UNPAID</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#57657f;background:rgba(87,101,127,0.1);border:1px solid rgba(87,101,127,0.24);">SKIPPED</span>
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;font-weight:600;padding:4px 9px;border-radius:6px;color:#ff8497;background:rgba(255,77,104,0.1);border:1px solid rgba(255,77,104,0.28);">WATCH THIS</span>
+      </div>
+      <div style="height:1px; background:linear-gradient(90deg,rgba(120,160,220,0.2),transparent); margin:20px 0;"></div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; margin-bottom:14px;">STATUS LIGHTS</div>
+      <div style="display:flex; flex-direction:column; gap:11px;">
+        <div style="display:flex; align-items:center; gap:11px;"><span style="width:12px;height:12px;border-radius:50%;background:#35e6a1;box-shadow:0 0 12px #35e6a1;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Stable</span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#57657f;margin-left:auto;">buffer safe, room to spend</span></div>
+        <div style="display:flex; align-items:center; gap:11px;"><span style="width:12px;height:12px;border-radius:50%;background:#ffb236;box-shadow:0 0 12px #ffb236;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Caution</span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#57657f;margin-left:auto;">tight before next paycheck</span></div>
+        <div style="display:flex; align-items:center; gap:11px;"><span style="width:12px;height:12px;border-radius:50%;background:#ff4d68;box-shadow:0 0 12px #ff4d68;"></span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">Critical</span><span style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#57657f;margin-left:auto;">bills exceed safe funds</span></div>
+      </div>
+    </div>
+
+    <!-- BUTTONS + WARNING + EMPTY -->
+    <div style="width:360px; border-radius:18px; padding:22px; background:linear-gradient(180deg, rgba(16,22,36,0.6), rgba(8,11,20,0.7)); border:1px solid rgba(120,160,220,0.12);">
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; margin-bottom:16px;">BUTTONS &amp; ACTIONS</div>
+      <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:20px;">
+        <div style="text-align:center; padding:13px; border-radius:12px; background:linear-gradient(145deg,#2fe1f0,#8b7bff); color:#04060c; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:13px; letter-spacing:2px; box-shadow:0 0 22px rgba(47,225,240,0.35);">PRIMARY</div>
+        <div style="display:flex; gap:10px;">
+          <div style="flex:1; text-align:center; padding:13px; border-radius:12px; background:rgba(47,225,240,0.06); border:1px solid rgba(47,225,240,0.3); color:#2fe1f0; font-family:'Chakra Petch',sans-serif; font-size:12px; letter-spacing:1.5px;">GHOST</div>
+          <div style="flex:0 0 auto; width:46px; height:46px; border-radius:50%; background:linear-gradient(145deg,#2fe1f0,#8b7bff); display:flex; align-items:center; justify-content:center; color:#04060c; font-size:26px; font-weight:300; box-shadow:0 0 18px rgba(47,225,240,0.45);">+</div>
+        </div>
+      </div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#ff8497; margin-bottom:12px;">WARNING STATE</div>
+      <div style="display:flex; align-items:center; gap:12px; padding:14px; border-radius:13px; background:rgba(255,77,104,0.07); border:1px solid rgba(255,77,104,0.28); margin-bottom:20px;"><span style="width:26px;height:26px;border-radius:50%;background:rgba(255,77,104,0.15);border:1px solid rgba(255,77,104,0.4);display:flex;align-items:center;justify-content:center;color:#ff8497;font-family:'Chakra Petch',sans-serif;font-weight:700;">!</span><div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#ff8497;">Rent clears in 2 days</div><div style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#8493ad;margin-top:2px;">$1,450 will drop you below buffer</div></div></div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#57657f; margin-bottom:12px;">EMPTY STATE</div>
+      <div style="text-align:center; padding:26px 18px; border-radius:13px; border:1px dashed rgba(120,160,220,0.22); background:rgba(255,255,255,0.02);"><div style="width:40px;height:40px;border-radius:11px;border:1px solid rgba(120,160,220,0.24);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;color:#57657f;font-size:22px;transform:rotate(45deg);">&#9671;</div><div style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#c7d2e6;">All clear</div><div style="font-family:'Chakra Petch',sans-serif;font-size:10px;color:#7d8aa3;margin-top:3px;letter-spacing:0.5px;">No bills due before payday</div></div>
+    </div>
+
+    <!-- COLOR + TYPE -->
+    <div style="width:440px; border-radius:18px; padding:22px; background:linear-gradient(180deg, rgba(16,22,36,0.6), rgba(8,11,20,0.7)); border:1px solid rgba(120,160,220,0.12);">
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; margin-bottom:16px;">PALETTE</div>
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:9px; margin-bottom:20px;">
+        <sc-for list="{{ swatches }}" as="sw" hint-placeholder-count="10">
+          <div style="display:flex; flex-direction:column; gap:5px;"><div style="height:44px; border-radius:9px; background:{{ sw.hex }}; box-shadow:0 0 12px {{ sw.glow }}, inset 0 0 0 1px rgba(255,255,255,0.06);"></div><span style="font-family:'Chakra Petch',sans-serif;font-size:8px;letter-spacing:0.5px;color:#8493ad;text-align:center;">{{ sw.name }}</span></div>
+        </sc-for>
+      </div>
+      <div style="height:1px; background:linear-gradient(90deg,rgba(120,160,220,0.2),transparent); margin:4px 0 18px;"></div>
+      <div style="font-family:'Chakra Petch',sans-serif; font-size:11px; letter-spacing:2px; color:#2fe1f0; margin-bottom:16px;">TYPOGRAPHY</div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div><div style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;color:#57657f;margin-bottom:5px;">CHAKRA PETCH &middot; READOUTS &amp; LABELS</div><div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:34px;color:#eafff5;">$12,480.00</div><div style="font-family:'Chakra Petch',sans-serif;font-size:12px;letter-spacing:2px;color:#8493ad;margin-top:4px;">SAFE TO SPEND / DUE SOON / STABLE</div></div>
+        <div><div style="font-family:'Chakra Petch',sans-serif;font-size:9px;letter-spacing:1px;color:#57657f;margin-bottom:5px;">SPACE GROTESK &middot; UI &amp; NAMES</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#e9eefb;">Car Payment &mdash; Toyota</div><div style="font-family:'Space Grotesk',sans-serif;font-size:13px;color:#8493ad;margin-top:3px;">Calm, tactical language. Never shame-based.</div></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const bill = (o) => o;
+    const billGroups = [
+      { title:'DUE TODAY', accent:'#ff4d68', total:'$1,582', items:[
+        bill({name:'Rent \u2014 Sable Apartments', amt:'$1,450.00', due:'Today \u00b7 Jul 1', cat:'Housing', catColor:'#8b7bff', source:'Checking \u00b7\u00b71247', autopay:true, urgent:true}),
+        bill({name:'Affirm \u2014 Sony A7 IV', amt:'$132.00', due:'Today \u00b7 Jul 1', cat:'BNPL', catColor:'#ff7a3d', source:'Checking \u00b7\u00b71247', autopay:true, debt:true, bnpl:true, paid:true}),
+      ]},
+      { title:'THIS WEEK', accent:'#ffb236', total:'$497', items:[
+        bill({name:'Car Payment \u2014 Toyota', amt:'$389.00', due:'Jul 4', cat:'Debt', catColor:'#ff4d68', source:'Checking \u00b7\u00b71247', autopay:true, debt:true, urgent:true}),
+        bill({name:'Spotify', amt:'$11.99', due:'Jul 5', cat:'Subscription', catColor:'#c07dff', source:'Amex \u00b7\u00b78', autopay:true, sub:true}),
+        bill({name:'Electric \u2014 Con Ed', amt:'$96.40', due:'Jul 6', cat:'Utilities', catColor:'#2fe1f0', source:'Checking \u00b7\u00b71247'}),
+      ]},
+      { title:'BEFORE NEXT PAYCHECK', accent:'#2fe1f0', total:'$274', items:[
+        bill({name:'Student Loan \u2014 Nelnet', amt:'$214.00', due:'Jul 9', cat:'Debt', catColor:'#ff4d68', source:'Checking \u00b7\u00b71247', autopay:true, debt:true}),
+        bill({name:'Adobe Creative Cloud', amt:'$59.99', due:'Jul 9', cat:'Subscription', catColor:'#c07dff', source:'Amex \u00b7\u00b78', autopay:true, sub:true}),
+      ]},
+      { title:'LATER THIS MONTH', accent:'#57657f', total:'$171', items:[
+        bill({name:'Internet \u2014 Verizon Fios', amt:'$79.99', due:'Jul 18', cat:'Utilities', catColor:'#2fe1f0', source:'Checking \u00b7\u00b71247', autopay:true}),
+        bill({name:'Klarna \u2014 Herman Miller', amt:'$88.00', due:'Jul 22', cat:'BNPL', catColor:'#ff7a3d', source:'Checking \u00b7\u00b71247', debt:true, bnpl:true}),
+        bill({name:'iCloud+', amt:'$2.99', due:'Jul 25', cat:'Subscription', catColor:'#c07dff', source:'Amex \u00b7\u00b78', autopay:true, sub:true}),
+      ]},
+    ];
+
+    const categories = [
+      { name:'Debt', budget:'$800', planned:'$735', spent:'$521', remaining:'$279', bar:'65%', color:'#ff4d68', status:'ON TRACK', statusBg:'rgba(255,77,104,0.1)', statusBorder:'rgba(255,77,104,0.28)' },
+      { name:'Food', budget:'$600', planned:'$600', spent:'$438', remaining:'$162', bar:'73%', color:'#35e6a1', status:'STABLE', statusBg:'rgba(53,230,161,0.1)', statusBorder:'rgba(53,230,161,0.28)' },
+      { name:'Gas', budget:'$180', planned:'$180', spent:'$142', remaining:'$38', bar:'79%', color:'#ffb236', status:'TIGHT', statusBg:'rgba(255,178,54,0.1)', statusBorder:'rgba(255,178,54,0.28)' },
+      { name:'Subscriptions', budget:'$90', planned:'$87', spent:'$75', remaining:'$15', bar:'83%', color:'#c07dff', status:'WATCH', statusBg:'rgba(192,125,255,0.1)', statusBorder:'rgba(192,125,255,0.28)' },
+      { name:'Pets', budget:'$120', planned:'$120', spent:'$64', remaining:'$56', bar:'53%', color:'#2fe1f0', status:'STABLE', statusBg:'rgba(47,225,240,0.1)', statusBorder:'rgba(47,225,240,0.26)' },
+      { name:'Savings', budget:'$500', planned:'$500', spent:'$500', remaining:'$0', bar:'100%', color:'#35e6a1', status:'FUNDED', statusBg:'rgba(53,230,161,0.1)', statusBorder:'rgba(53,230,161,0.28)' },
+      { name:'Other', budget:'$200', planned:'$200', spent:'$96', remaining:'$104', bar:'48%', color:'#8493ad', status:'STABLE', statusBg:'rgba(125,138,163,0.1)', statusBorder:'rgba(125,138,163,0.24)' },
+    ];
+
+    const incomeChip = (color, alpha) => ({
+      chipBg: color === '#57657f' ? 'rgba(87,101,127,0.1)' : `${color}22`.replace('#','rgba(').length ? color : color,
+    });
+    const incomes = [
+      { name:'Paycheck 1 \u2014 Northwind Labs', amt:'$2,180.00', amtColor:'#35e6a1', date:'Received Jun 30', status:'RECEIVED', color:'#35e6a1', chipBg:'rgba(53,230,161,0.12)', chipBorder:'rgba(53,230,161,0.3)' },
+      { name:'Paycheck 2 \u2014 Northwind Labs', amt:'$2,180.00', amtColor:'#c7d2e6', date:'Planned Jul 15', status:'PLANNED', color:'#2fe1f0', chipBg:'rgba(47,225,240,0.1)', chipBorder:'rgba(47,225,240,0.26)' },
+      { name:'Freelance \u2014 Wave Invoice', amt:'$650.00', amtColor:'#c7d2e6', date:'Planned Jul 12', status:'PLANNED', color:'#8b7bff', chipBg:'rgba(139,123,255,0.1)', chipBorder:'rgba(139,123,255,0.26)' },
+      { name:'Rebate \u2014 State Tax', amt:'$120.00', amtColor:'#57657f', date:'Uncertain Jul 20', status:'SKIPPED', color:'#57657f', chipBg:'rgba(87,101,127,0.1)', chipBorder:'rgba(87,101,127,0.24)' },
+    ];
+
+    const T = (mon, day, name, amt, amtColor, cat, catColor, source, impact, impactColor) =>
+      ({ mon, day, name, amt, amtColor, cat, catColor, source, impact, impactColor });
+    const transactions = [
+      T('JUL','01','Rent \u2014 Sable Apartments','\u2212$1,450.00','#e9eefb','Housing','#8b7bff','Checking \u00b7\u00b71247','\u2193 Checking','#ff8497'),
+      T('JUL','01','Whole Foods Market','\u2212$74.21','#e9eefb','Food','#35e6a1','Amex \u00b7\u00b78','Card \u00b7 no impact','#57657f'),
+      T('JUN','30','Paycheck \u2014 Northwind Labs','+$2,180.00','#35e6a1','Income','#35e6a1','Checking \u00b7\u00b71247','\u2191 Checking','#35e6a1'),
+      T('JUN','30','Shell','\u2212$52.10','#e9eefb','Gas','#ffb236','Checking \u00b7\u00b71247','\u2193 Checking','#ff8497'),
+      T('JUN','29','Affirm \u2014 Sony A7 IV','\u2212$132.00','#ff6d84','BNPL','#ff7a3d','Checking \u00b7\u00b71247','\u2193 Checking','#ff8497'),
+      T('JUN','29','Spotify','\u2212$11.99','#e9eefb','Subscription','#c07dff','Amex \u00b7\u00b78','Card \u00b7 no impact','#57657f'),
+      T('JUN','28','Trader Joe\u2019s','\u2212$61.44','#e9eefb','Food','#35e6a1','Checking \u00b7\u00b71247','\u2193 Checking','#ff8497'),
+    ];
+
+    const heroStates = [
+      { label:'STABLE', color:'#35e6a1', border:'rgba(53,230,161,0.3)', glow:'rgba(53,230,161,0.14)', chipBg:'rgba(53,230,161,0.08)', amount:'$1,284.50', sub:'safe until Jul 15 \u00b7 next paycheck', bar:'62%', committed:'62%' },
+      { label:'CAUTION', color:'#ffb236', border:'rgba(255,178,54,0.32)', glow:'rgba(255,178,54,0.14)', chipBg:'rgba(255,178,54,0.08)', amount:'$212.80', sub:'tight \u00b7 keep it lean until Jul 15', bar:'88%', committed:'88%' },
+      { label:'CRITICAL', color:'#ff4d68', border:'rgba(255,77,104,0.34)', glow:'rgba(255,77,104,0.16)', chipBg:'rgba(255,77,104,0.08)', amount:'\u2212$146.00', sub:'bills exceed safe funds \u00b7 move money', bar:'106%', committed:'106%' },
+    ];
+
+    const swatches = [
+      { name:'BG', hex:'#05070d', glow:'transparent' },
+      { name:'PANEL', hex:'#101724', glow:'transparent' },
+      { name:'CYAN', hex:'#2fe1f0', glow:'rgba(47,225,240,0.5)' },
+      { name:'EMERALD', hex:'#35e6a1', glow:'rgba(53,230,161,0.5)' },
+      { name:'VIOLET', hex:'#8b7bff', glow:'rgba(139,123,255,0.5)' },
+      { name:'MAGENTA', hex:'#ff3d9a', glow:'rgba(255,61,154,0.5)' },
+      { name:'AMBER', hex:'#ffb236', glow:'rgba(255,178,54,0.5)' },
+      { name:'ORANGE', hex:'#ff7a3d', glow:'rgba(255,122,61,0.5)' },
+      { name:'DEBT RED', hex:'#ff4d68', glow:'rgba(255,77,104,0.5)' },
+      { name:'SLATE', hex:'#57657f', glow:'transparent' },
+    ];
+
+    return {
+      billGroups,
+      homeGroups: billGroups.slice(0, 2),
+      categories,
+      homeCats: categories.slice(0, 4),
+      incomes,
+      homeIncomes: incomes.slice(0, 3),
+      transactions,
+      heroStates,
+      swatches,
+    };
+  }
+}
+</script>
+</body>
+</html>
